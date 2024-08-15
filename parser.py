@@ -21,7 +21,7 @@ def format_fund(str):
     return str
 
 # Get filing
-headers = {"User-Agent": "Mozilla/5.0 (Joel Malissa jmaliska@gmail.com)"}
+headers = {"User-Agent": "Mozilla/5.0 ({INSERT NAME} {INSERT EMAIL ADDRESS})"}
 response = requests.get(filing_url, headers=headers)
 sleep(1)
 if response.status_code == 200:
